@@ -85,7 +85,7 @@ async def _(e):
         except Exception:
             await z.edit("invalid Channel given")
             return
-    async for msg in ultroid_bot.iter_messages(int(c), reverse=True):
+    async for msg in ultroid_bot.iter_messages(int(c)):
         try:
             await asyncio.sleep(1.3)
             await ultroid_bot.send_message(int(d), msg)
