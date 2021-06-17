@@ -64,7 +64,7 @@ async def _(e):
             await ultroid_bot.send_message(bot.me.id, str(e))
 
 
-@ultroid_cmd(pattern="shift (.*)")
+@ultroid_cmd(pattern="reverseit (.*)")
 async def _(e):
     x = e.pattern_match.group(1)
     z = await eor(e, "`processing..`")
